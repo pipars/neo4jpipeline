@@ -4,13 +4,13 @@ author: pipars
 date: 2024-05-27
 version: 0.1
 license: MIT
-description: At this time this filter is used to pull neo4j dependency only.
-requirements: neo4j
+description: At this time this filter is used to pull neo4j and ollama dependency only.
+requirements: neo4j, ollama
 """
 from pydantic import BaseModel, Field
 from typing import Optional
 
-import neo4j
+import neo4j, ollama
 
 class Filter:
     class Valves(BaseModel):
